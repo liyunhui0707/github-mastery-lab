@@ -1,0 +1,11 @@
+# Day 1 Notes
+
+## What I learned
+- Created a repo and cloned it locally
+- Created a feature branch
+- Opened a PR and merged it
+
+## Terms
+- Repo: a project on GitHub
+- Branch: a separate line of work
+- PR: a request to merge branch changes into main
