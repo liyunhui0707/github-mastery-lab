@@ -1,0 +1,10 @@
+{
+  "name": "github-mastery-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Practice repo for GitHub mastery labs",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "axios": "^1.7.0"
+  }
+}
