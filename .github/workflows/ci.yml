@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show files
+        run: |
+          echo "Listing repo files:"
+          ls -la
+
+      - name: Basic README check
+        run: |
+          test -f README.md
+          echo "README exists ✅"
+
+      - name: Generate a simple report
+        run: |
+          mkdir -p ci-output
+          echo "CI ran on $(date)" > ci-output/report.txt
+          echo "Commit: $GITHUB_SHA" >> ci-output/report.txt
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-report
+          path: ci-output/report.txt
