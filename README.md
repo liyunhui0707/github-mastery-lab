@@ -7,3 +7,4 @@ date:2026/0220
 
 purpose:learing github from web  2026 0221 sat
 
+day6 progress
